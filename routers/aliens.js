@@ -6,7 +6,7 @@ router.get('/',async (req,res)=>{
         const aliens = await Alien.find()
         res.json(aliens)
     } catch (error) {
-        res.send("error "+error)
+        res.send("the error "+error)
     }
 })
 
